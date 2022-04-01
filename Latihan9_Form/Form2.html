@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>HTML Form</title>
+</head>
+<body>
+
+    <!-- Tag input atribut type
+        type = text     : memasukan text
+        type = password : memasukan password
+        type = radio    : pilihan (jenis kelamin contohnya)
+        type = checkbox : multiple select -->
+
+    <!-- Tag button type
+        type = submit   : tombol submit/kirim
+        type = reset    : tombol reset form
+        type = button   : tombol .... -->
+
+    <!-- Tag textarea
+        untuk memasukan text yang lebih banyak (komentar contohnya) -->
+
+    <!-- Tag select (combo box)
+        pilihan menggunakan tag option (kotak kelahiran contohnya)-->
+
+    <form action="">
+        <table cellspacing="0" cellpadding="5">
+            <tr>
+                <td><label for="username">username : </label></td>
+                <td colspan="2"><input type="text" id="username"></td>
+            </tr>
+            <tr>
+                <td><label for="password">password : </label></td>
+                <td colspan="2"><input type="password" id="password"></td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <input type="radio" id="pria" name="jenisKelamin"><label for="pria">pria</label>
+                    <input type="radio" id="wanita" name="jenisKelamin"><label for="wanita">wanita</label>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <input type="checkbox" id="menyanyi"><label for="menyanyi">menyanyi</label>
+                    <input type="checkbox" id="olahraga"><label for="olahraga">olahraga</label>
+                    <input type="checkbox" id="ngoding"><label for="ngoding">ngoding</label>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="comboBox">Combo Box : </label></td>
+                <td colspan="2">
+                    <select id="comboBox">
+                        <option>Jakarta</option>
+                        <option>Bogor</option>
+                        <option>Bekasi</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="textArea">Text Area :</label></td>
+                <td colspan="2"><textarea id="textArea"></textarea></td>
+            </tr>
+            <tr>
+                <td colspan="3"><button type="submit">Kirim!</button></td>
+            </tr>
+        </table>
+    </form>
+    
+</body>
+</html>
